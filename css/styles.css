@@ -263,7 +263,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2c7e9', end
 }
 .article-bread a:first-child i.bord2:after {
     background: #aaa;
-    bottom: 20px;
+    bottom: 16px;
     content: " ";
     height: 46px;
     position: absolute;
@@ -392,6 +392,9 @@ table.borderless td, table.borderless th {
 }
 .article, .conference {
   display: none;
+}
+.article-bread {
+  position: relative;
 }
 @media (min-width: 992px) {
   .navbar-toggler {
