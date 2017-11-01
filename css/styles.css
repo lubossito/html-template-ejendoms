@@ -390,6 +390,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2c7e9', end
 table.borderless td, table.borderless th {
     border: none!important;
 }
+.article, .conference {
+  display: none;
+}
 @media (min-width: 992px) {
   .navbar-toggler {
     display: none;

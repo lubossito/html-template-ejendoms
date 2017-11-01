@@ -39,13 +39,39 @@ $(".menu-overlay").click(function(event) {
 });
 
 
-
 /*!
   * clone element
   */
 
 $("#duplicate").click(function(){   
     $(".duplicater:last").clone().appendTo(".wrapper");  
+});
+
+
+/*
+	Load more content with jQuery
+*/   
+
+$(function () {
+    $("div.article").slice(0, 3).show();
+    $("#loadMoreArticles").on('click', function (e) {
+        e.preventDefault();
+        $("div.article:hidden").slice(0, 3).slideDown();
+        if ($("div.article:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
+});
+
+$(function () {
+    $("div.conference").slice(0, 6).show();
+    $("#loadMoreConferences").on('click', function (e) {
+        e.preventDefault();
+        $("div.conference:hidden").slice(0, 3).slideDown();
+        if ($("div.conference:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
 });
 
 /*!
